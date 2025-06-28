@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from giulia device
 $(call inherit-product, device/oneplus/giulia/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_giulia
@@ -19,6 +19,14 @@ PRODUCT_DEVICE := giulia
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := CPH2691
+
+# Evolution X flags
+WITH_GMS := true
+BUILD_BCR := true
+TARGET_HAS_UDFPS := true
+TARGET_INCLUDE_ACCORD := false
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
