@@ -54,6 +54,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prop/23867/NA.prop:$(TARGET_COPY_OUT_PRODUCT)/etc/23867/build.NA.prop \
     $(LOCAL_PATH)/prop/23867/product.prop:$(TARGET_COPY_OUT_PRODUCT)/etc/23867/build.default.prop
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 35
 
