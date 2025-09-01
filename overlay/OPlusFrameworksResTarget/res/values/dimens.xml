@@ -5,6 +5,9 @@
 -->
 <resources>
 
+    <!-- Default dialog corner radius -->
+    <dimen name="dialog_corner_radius">4dp</dimen>
+
     <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
