@@ -29,6 +29,9 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0-service \
     hwservicemanager
 
+# LiveDisplay
+$(call soong_config_set,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
